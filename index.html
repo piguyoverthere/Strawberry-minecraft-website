@@ -1,31 +1,18 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Strawberry minecraft installation</title>
-    <div class="style">
-      <style>
-        .norm{
-          font-family: Arial, sans-serif;
-          color: rgb(0, 137, 175);
-          color-scheme: inherit;
-        }
-        p{
-          font-family: Arial, sans-serif;
-          color: rgb(0, 137, 175);
-          color-scheme: inherit;
-        }
-        h1{
-          font-family: Arial, sans-serif;
-          color: rgb(74, 190, 207);
-          color-scheme: inherit;
-        }
-        .javascript{
-          
-        }
-        #ignore{
-          font-family: serif;
-          color: rgb(255, 255, 255);
-        }
-        .button {
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      p, .norm {
+        color: rgb(0, 137, 175);
+      }
+      h1 {
+        color: rgb(74, 190, 207);
+      }
+      .button {
         border: none;
         color: white;
         padding: 8px 16px;
@@ -36,45 +23,67 @@
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
-        }
-        .acquire {
+      }
+      .acquire {
         background-color: white; 
         color: black; 
         border: 2px solid #008CBA;
-        }
-
-        .acquire:hover {
+      }
+      .acquire:hover {
         background-color: #008CBA;
         color: white;
-        }
-        .info-box {
+      }
+      .info-box {
         background-color: #e0f7fa; 
         padding: 20px;             
         border-radius: 8px;        
         margin-bottom: 20px;       
-        }
-      </style>
-    </div>
+      }
+    </style>
   </head>
   <body>
+    
     <div class="info-box">
-    <h1>About</h1>
-    <nav style="font-family: Arial, sans-serif;">
-      <a href="/install.html">Install</a>
-      <a href="/about.html">About</a>
-      <a href="/pricing.html">Pricing</a>
-      <a href="/index.html">Home</a>
-    </nav>
+      <h1>About</h1>
+      <nav>
+        <a href="/install.html">Install</a>
+        <a href="/about.html">About</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/index.html">Home</a>
+      </nav>
     </div>
+    
     <br>
+    
     <p>Strawberry minecraft is a minecraft mod containing community requested features
-      and features *we beleive will improve the overall experiene. This mod is scheduled
-      to release to public on July 2029, but delays may occur.
+      and features we believe will improve the overall experience. This mod is scheduled
+      to release to the public in July 2029, but delays may occur.
     </p>
-    <div class="acquire">
-      <button class="button acquire" type="button">pre-order</button>
-      <!--purchase code later!-->
+    
+    <div>
+      <button onclick="purchase()" class="button acquire" type="button">pre-order</button>
     </div>
+    
     <p>$0.00</p>
+    <script>
+      const email = ["placeholder",""];
+      function purchase() {
+        console.log("Button clicked!");
+        
+        let username = prompt("Enter an email you would like the add-on file sent to:");
+        if (username === null) {
+          return; 
+        }
+        if (username.includes("@")) {
+          email.push(username)
+          console.log("ok");
+          alert("Success");
+          console.log(email) // remove this line later or else the emails would be leaked
+        } else {
+          console.log("Invalid email");
+          alert("Invalid email");
+        }
+      }
+    </script>
   </body>
 </html>
