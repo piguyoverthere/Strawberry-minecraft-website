@@ -3,17 +3,22 @@
     <title>Strawberry minecraft installation</title>
     <div class="style">
       <style>
-        #norm{
+        .norm{
           font-family: Arial, sans-serif;
           color: rgb(0, 137, 175);
           color-scheme: inherit;
         }
-        .h1{
+        p{
+          font-family: Arial, sans-serif;
+          color: rgb(0, 137, 175);
+          color-scheme: inherit;
+        }
+        h1{
           font-family: Arial, sans-serif;
           color: rgb(74, 190, 207);
           color-scheme: inherit;
         }
-        #javascript{
+        .javascript{
           
         }
         #ignore{
@@ -27,29 +32,49 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 32px;
+        font-size: 20px;
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
         }
+        .acquire {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+        }
+
+        .acquire:hover {
+        background-color: #008CBA;
+        color: white;
+        }
+        .info-box {
+        background-color: #e0f7fa; 
+        padding: 20px;             
+        border-radius: 8px;        
+        margin-bottom: 20px;       
+        }
       </style>
     </div>
+  </head>
+  <body>
+    <div class="info-box">
+    <h1>About</h1>
     <nav style="font-family: Arial, sans-serif;">
       <a href="/install.html">Install</a>
       <a href="/about.html">About</a>
       <a href="/pricing.html">Pricing</a>
       <a href="/index.html">Home</a>
     </nav>
-  </head>
-  <body>
-    <h1>About</h1>
+    </div>
     <br>
-    <p>Strawberry minecraft is a minecraft mod containing community requested features<br>
-      and features *we beleive will improve the overall experiene. This mod is scheduled<br>
+    <p>Strawberry minecraft is a minecraft mod containing community requested features
+      and features *we beleive will improve the overall experiene. This mod is scheduled
       to release to public on July 2029, but delays may occur.
     </p>
-    <div class="aqcuire">
-      <button class="javascript" type="button"></button>
+    <div class="acquire">
+      <button class="button acquire" type="button">pre-order</button>
+      <!--purchase code later!-->
     </div>
+    <p>$0.00</p>
   </body>
 </html>
