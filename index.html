@@ -78,7 +78,7 @@
     <script>
       const email = ["placeholder",""];
       function purchase() {
-        console.log("Button clicked!");
+        console.log("js trigger");
         
         let username = prompt("Enter an email you would like the add-on file sent to:");
         if (username === null) {
@@ -90,7 +90,7 @@
           alert("Success");
           console.log(email) //remove this line later or else the emails would be leaked
         } else {
-          console.log("Invalid email");
+          console.log("invalid email boo");
           alert("Invalid email");
         }
       }
